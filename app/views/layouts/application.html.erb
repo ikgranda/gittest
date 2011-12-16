@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aok: <%= @title %></title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body style="height: 100%; overflow: hidden;">
+
+<div class="site_header">Header</div>
+
+<div class="site_center">
+  <%= yield %>
+</div>
+
+<div class="site_footer">Footer</div>
+</body>
+</html>
